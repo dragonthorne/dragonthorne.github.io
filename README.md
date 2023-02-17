@@ -1,2 +1,2 @@
 # dragonthorne.github.io
-my homepage
+my homepage idk what to tell you
