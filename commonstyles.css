@@ -12,6 +12,20 @@ h1 {
 }
 
 div {
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 90px;
+}
+
+header h1 {
+    margin-top: 40px;
+}
+
+div p.body {
+    width: 40%;
+    text-align: justify;
+    display: inline-block;
+}
+
+a {
+    color:darkmagenta;
 }
