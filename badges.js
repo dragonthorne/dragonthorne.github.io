@@ -10,3 +10,4 @@ function loadBadges () {
 
     document.getElementById('footer').innerHTML = badgeHTML
 }
+loadBadges();
