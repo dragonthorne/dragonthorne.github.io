@@ -8,6 +8,6 @@ function loadBadges () {
     
     let badgeHTML = counter + badgeSite + piracy + anarchy + enby + queer
 
-    document.getElementById('footer').innerHTML = badgeHTML
+    document.getElementById('footer').innerHTML = badgeHTML + document.getElementById('footer').innerHTML;
 }
 loadBadges();

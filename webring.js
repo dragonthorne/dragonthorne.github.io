@@ -24,4 +24,6 @@ if (sites[sites.length-1].url == window.location.href) {
     next = sites[curIndex+1];
 }
 
-let html = '<nav style="a {font-size: 12px; padding: initial; color: black; text-decoration: none; margin: 0px;}">|<a'+ prev.url +'>'+ prev.name +'</a>|\n<p>[placeholder] Webring</p>|<a'+ next.url +'>'+ next.name +'</a>|</nav>'
+let html = '<nav style="a {font-size: 12px; padding: initial; color: black; text-decoration: none; margin: 0px;}">|<a'+ prev.url +'>'+ prev.name +'</a>|\n<p>[placeholder] Webring</p>|<a'+ next.url +'>'+ next.name +'</a>|</nav>';
+
+document.getElementById('footer').innerHTML += html; 
