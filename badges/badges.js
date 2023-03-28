@@ -1,4 +1,4 @@
-function loadBadges () {
+export function loadBadges () {
     let counter = '<iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>\n'
     let badgeSite = '<a href="https://cyber.dabamos.de/88x31"><img src="/badges/88x31.gif" title="go here for badges" alt="88x31"></a>\n'
     let piracy = '<img src="/badges/piracy.gif" title="remember kids: always shit on adobe" alt="piracy now">\n'
@@ -10,4 +10,3 @@ function loadBadges () {
 
     document.getElementById('footer').innerHTML += badgeHTML;
 }
-loadBadges();

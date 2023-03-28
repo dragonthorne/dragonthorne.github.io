@@ -1,4 +1,4 @@
-function addWebring () {
+export function addWebring () {
     import webringJSON from "/webring.json"
     let sites = JSON.parse(webringJSON);
 
@@ -29,4 +29,3 @@ function addWebring () {
 
     document.getElementById('footer').innerHTML += html;
 }
-addWebring();
