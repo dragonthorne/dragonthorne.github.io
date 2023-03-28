@@ -29,3 +29,4 @@ function addWebring () {
 
     document.getElementById('footer').innerHTML += html;
 }
+addWebring();
