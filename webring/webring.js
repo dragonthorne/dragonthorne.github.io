@@ -24,7 +24,7 @@ function run (json) {
         next = sites[curIndex+1];
     }
 
-    let html = '<nav style="a {font-size: 12px; padding: initial; color: black; text-decoration: none; margin: 0px;}">|<a href="'+ prev.url +'">'+ prev.name +'</a>|\n<a>[placeholder] Webring</a>|\n<a href="'+ next.url +'">'+ next.name +'</a>|</nav>';
+    let html = '<nav style="a {font-size: 12px; padding: initial; text-decoration: none; margin: 0px;}">|<a href="'+ prev.url +'">'+ prev.name +'</a>|\n<a>[placeholder] Webring</a>|\n<a href="'+ next.url +'">'+ next.name +'</a>|</nav>';
 
     document.getElementById('footer').innerHTML += html;
 }
