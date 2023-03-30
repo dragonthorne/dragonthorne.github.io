@@ -2,7 +2,7 @@ function run (json) {
     let sites = json
 
     for (let i = 0; i < sites.length; i++) {
-        let html = '\n<a href="'+ sites[i].url +'">"'+ sites[i].name +'"\'s site</a>'
+        let html = '<br>\n<a href="'+ sites[i].url +'">"'+ sites[i].name +'"\'s site</a>'
         document.getElementById('body').innerHTML += html;
     }
 }
