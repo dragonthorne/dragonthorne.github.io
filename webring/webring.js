@@ -28,3 +28,7 @@ function run (json) {
 
     document.getElementById('footer').innerHTML += html;
 }
+
+fetch("https://dragonthorne.github.io/webring/webring.json")
+    .then((response) => response.json())
+    .then((json) => run(json));
