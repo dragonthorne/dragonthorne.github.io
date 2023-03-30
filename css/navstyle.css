@@ -17,3 +17,8 @@ nav a.current {
 nav a:hover {
     color: red;
 }
+
+nav {
+    position: sticky;
+    top: 8px; 
+}
