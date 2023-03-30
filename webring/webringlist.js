@@ -7,9 +7,6 @@ function run (json) {
     }
 }
 
-sites[0].name
-sites[0].url
-
 fetch('https://dragonthorne.github.io/webring/webring.json')
     .then((response) => response.json())
     .then((json) => run(json));
