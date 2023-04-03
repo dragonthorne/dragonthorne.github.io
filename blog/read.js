@@ -14,7 +14,7 @@ function run (pages) {
     let pageFile = "https://dragonthorne.github.io/blog/articles/" + curPage.date + " " + curPage.title;
     fetch(pageFile)
         .then((response) => response.text())
-        .then((text) => document.getElementByClassName('body').innerHTML = text)
+        .then((text) => document.getElementById('body').innerText = text)
 }
 
 fetch("https://dragonthorne.github.io/blog/pages.json")
