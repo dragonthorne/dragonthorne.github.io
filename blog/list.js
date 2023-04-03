@@ -5,7 +5,7 @@ function run (pages) {
         let date = listItem.date;
         date = date.substring(0,4) + "-" + date.substring(4,6) + "-" + date.substring(6,8);
         
-        let listItemHTML = '<br><a href="/read?date='+ listItem.date +'&title="'+ listItem.title +'">'+ date +' | '+ listItem.title +'</a>';
+        let listItemHTML = '<br><a href="/read?date='+ listItem.date +'&title='+ listItem.title +'">'+ date +' | '+ listItem.title +'</a>';
         document.getElementById("body").innerHTML += listItemHTML;
     }
 }
