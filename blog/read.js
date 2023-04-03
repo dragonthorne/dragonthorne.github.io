@@ -17,8 +17,6 @@ function run (pages) {
         .then((text) => document.getElementById('body').innerText = text)
 }
 
-function load () {
-    fetch("https://dragonthorne.github.io/blog/pages.json")
-        .then((response) => response.json())
-        .then((json) => run(json));
-}
+fetch("https://dragonthorne.github.io/blog/pages.json")
+    .then((response) => response.json())
+    .then((json) => run(json));
