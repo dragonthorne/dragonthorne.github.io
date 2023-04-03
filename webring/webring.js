@@ -1,6 +1,4 @@
-function run (json) {
-    let sites = json
-    
+function run (sites) {    
     let prev;
     let curIndex = 0;
     let next;
