@@ -11,7 +11,7 @@ function run (pages) {
 
     document.getElementById('title').innerText = curPage.title;
 
-    let pageFile = "https://dragonthorne.github.io/blog/articles/" + curPage.date + " " + curPage.title;
+    let pageFile = "https://dragonthorne.github.io/blog/articles/" + curPage.date + " " + curPage.title +".txt";
     fetch(pageFile)
         .then((response) => response.text())
         .then((text) => document.getElementById('body').innerText = text)
