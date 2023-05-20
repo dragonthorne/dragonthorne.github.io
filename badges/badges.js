@@ -4,7 +4,8 @@ let piracy = '<img src="/badges/piracy.gif" title="remember kids: always shit on
 let anarchy = '<img src="/badges/anarchynow.gif" title="anarchy is rad" alt="anarchy now">\n'
 let enby = '<img src="/badges/nonbinary.png" title="funny considering i love computers" alt="nonbinary pride">\n'
 let queer = '<img src="/badges/queer.png" title="i don\'t know if i\'m gay but i am absolutely not straight" alt="queer pride">\n'
+let trans = '<img src="/badges/trans.png" title="we stay silly :3" alt="trans pride">\n'
     
-let badgeHTML = counter + badgeSite + piracy + anarchy + enby + queer
+let badgeHTML = counter + badgeSite + piracy + anarchy + enby + queer + trans
 
 document.getElementById('footer').innerHTML += badgeHTML;
