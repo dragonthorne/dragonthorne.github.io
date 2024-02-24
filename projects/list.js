@@ -1,4 +1,4 @@
-function run (projects) {
+function listProjects (projects) {
     for (let i = 0; i < projects.length; i++) {
         let listItem = projects[i];
 
@@ -10,4 +10,4 @@ function run (projects) {
 
 fetch("https://dragonthorne.github.io/projects/projects.json")
     .then((response) => response.json())
-    .then((json) => run(json));
+    .then((json) => listProjects(json));

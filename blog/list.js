@@ -1,4 +1,4 @@
-function run (pages) {
+function listPages (pages) {
     for (let i = 0; i < pages.length; i++) {
         let listItem = pages[i];
 
@@ -12,4 +12,4 @@ function run (pages) {
 
 fetch("https://dragonthorne.github.io/blog/pages.json")
     .then((response) => response.json())
-    .then((json) => run(json));
+    .then((json) => listPages(json));
