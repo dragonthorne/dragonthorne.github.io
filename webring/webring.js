@@ -1,4 +1,4 @@
-function run (sites) {    
+function placeWebring (sites) {    
     let prev;
     let curIndex = 0;
     let next;
@@ -29,4 +29,4 @@ function run (sites) {
 
 fetch("https://dragonthorne.github.io/webring/webring.json")
     .then((response) => response.json())
-    .then((json) => run(json));
+    .then((json) => placeWebring(json));
