@@ -3,7 +3,7 @@ function listProjects (projects) {
         let listItem = projects[i];
 
         
-        let listItemHTML = '<br><a href="/projects/'+ listItem.name +'">'+ listItem.name+'</a><p>'+ listItem.desc +'</p>';
+        let listItemHTML = '<br><a href="/projects/'+ listItem.name +'">'+ listItem.name+'</a><p class="desc">'+ listItem.desc +'</p>';
         document.getElementById("body").innerHTML += listItemHTML;
     }
 }

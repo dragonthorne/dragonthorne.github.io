@@ -29,3 +29,7 @@ div p.body {
 a {
     color:darkmagenta;
 }
+
+p.desc {
+    margin: 0;
+}
