@@ -17,6 +17,8 @@ let postJSON = [
 ]
 
 function content (index) {
+    if (index == -1) {aboutme(); return;}
+
     let title = document.getElementsByClassName("title")[0];
     let date = document.getElementsByClassName("date")[0];
     let content = document.getElementsByClassName("content")[0];
@@ -25,4 +27,14 @@ function content (index) {
     dateRaw = postJSON[index].date;
     date.innerText = dateRaw.slice(0,4) + "-" + dateRaw.slice(4,6) + "-" + dateRaw.slice(6);
     content.innerHTML = postJSON[index].content;
+}
+
+function aboutme () {
+    let title = document.getElementsByClassName("title")[0];
+    let date = document.getElementsByClassName("date")[0];
+    let content = document.getElementsByClassName("content")[0];
+
+    title.innerText = "About Me";
+    date.innerText = "N/A";
+    content.innerHTML = "i'm Thorne and i use she/they pronouns, though honestly as long as it's not masculine you can refer to me with whatever your heart desires. i also go by a couple other names because who doesn't love having multiple first names, and you can find them plus a rough list of what terms i'm comfortable with <a href=\"https://en.pronouns.page/@dragonthorne\">here.</a> i have far too much time on my hands thanks to my awful sleep schedule, and i use it for playing things like Minecraft, Payday 2, Ultrakill, and Deep Rock Galactic, though i do have an obscene number of hours on 4D Minesweeper. i also have a habit of trying to learn languages from video games, such as Payday 2's kataru language, or the dragon language from Skyrim, a game i have never played."
 }
