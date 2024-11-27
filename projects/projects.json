@@ -2,5 +2,9 @@
     {
         "name": "ELA_Blog",
         "desc": "blog site for my ELA Passion Project (the couple posts are also gonna be in my actual blog)"
+    },
+    {
+        "name": "TFC_Anvil_Calculator",
+        "desc": "(literally-just-HTML level WIP) a tool to calculate a pattern for working an ingot into a Perfectly Forged tool in TerraFirmaCraft"
     }
 ]
